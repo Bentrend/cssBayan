@@ -14,7 +14,7 @@
 }
 
 span {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -26,10 +26,12 @@ img {
     width: 55%;
     height: 55%;
     margin: 0 20%;
+    
 }
 
 .bayan-item-img {
-    display: none;
+    height: 0;
+    transform: scale(0.5,0.5);
 }
 
 .bayan-item-text {
@@ -55,8 +57,16 @@ img {
 .bayan-item-radio:checked ~ .bayan-item-text {
     color: rgb(73, 7, 253);
 }
-.bayan-item-radio:checked ~ .bayan-item-text .bayan-item-img {
+
+.bayan-item-radio:checked img{
     display: block;
+}
+
+.bayan-item-radio:checked ~ .bayan-item-text .bayan-item-img {
+    height: 100em;
+    transition: height 4s ease-out;
+    transform: scale(1,1);
+    transition: transform 2s ease-out;
 }
 
 .bayan-item-radio:checked ~ .bayan-item-text:after {
@@ -72,7 +82,10 @@ img {
 }
 
 .bayan-item-radio:hover ~ .bayan-item-text .bayan-item-img {
-    display: block;
+    height: 100em;
+    transition: height 4s ease-out;
+    transform: scale(1,1);
+    transition: transform 2s ease-out;
 
     
 }
