@@ -64,11 +64,22 @@ img {
 }
 .escape {
     height: 1.5em;
+    visibility: hidden;
 }
 .bayan-item-radio {
     display: none;
 }
 @media(hover:hover) {
+
+    .bayan-item-radio:hover ~ .bayan-item-text .escape {
+        visibility: inherit;
+    }
+
+    .bayan-container:hover .escape {
+        visibility: inherit;
+        transition: visibility 2s;
+    }
+
     .bayan-container:hover {
         color: rgb(0, 0, 0);
         transition: color 0.5s;
