@@ -14,6 +14,7 @@ html {
 
 .header {
     color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 span {
@@ -30,7 +31,7 @@ span {
 
 
 .bayan-item {
-border-bottom: 1px solid rgb(255, 255, 255);
+border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 img {
@@ -54,21 +55,21 @@ img {
 
 .bayan-item-radio:checked ~ .bayan-item-text {
     color: rgb(255, 255, 255);
-    transition: color 2s ease-out;
+    transition: color 1s ease-out;
 }
 .bayan-item-radio:checked ~ .bayan-item-text .escape {
     transform: rotate(45deg);
-    transition: transform 2s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .bayan-container:hover  {
     color: rgb(0, 0, 0);
-    transition: color 1s;
+    transition: color 0.5s;
   
 }
 .bayan-item-radio:hover ~ .bayan-item-text .escape {
     transform: rotate(45deg);
-    transition: transform 2s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .bayan-item-radio:checked img{
@@ -76,10 +77,10 @@ img {
 }
 
 .bayan-item-radio:checked ~ .bayan-item-text .bayan-item-img {
-    height: auto;
+    height: 100%;
     transition: height 4s ease-out;
     transform: scale(1,1);
-    transition: transform 2s ;
+    transition: transform 1s ;
 }
 
 
@@ -88,10 +89,10 @@ img {
 
 
 .bayan-item-radio:hover ~ .bayan-item-text .bayan-item-img {
-    height: auto;
-    transition: height 10s ease-out;
+    height: 100%;
+    transition: height 4s ease-out;
     transform: scale(1,1);
-    transition: transform 2s ;
+    transition: transform 1s ;
 
     
 }
