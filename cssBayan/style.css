@@ -1,25 +1,36 @@
-.main {
-    width: 100%;
-    max-width: 1920px;
-    height: 100%;
-    margin: 0% auto;
-    background-color: rgb(255, 255, 255);
+html {
+    
+    background-color: rgb(99, 131, 84);
 }
 .bayan-container {
     max-height: 100vh;
     width: 100%;
     max-width: 70%;
     margin: 4%  auto;
-    font-size: 300%;
+    font-size: 100%;
+    color: rgb(0, 2, 145);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.header {
+    color: rgb(255, 255, 255);
 }
 
 span {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
+.menu-mem{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .bayan-item {
-border-bottom: 1px solid rgb(183, 182, 189);
+border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 img {
@@ -40,22 +51,24 @@ img {
     cursor: pointer;
 }
 
-.bayan-item-text:after {
-    content: "";
-    display: block;
-
-    border-style: solid;
-    border-width: 100% 90% 0 90%;
-    border-color: #007bff transparent transparent transparent;
-
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-}
 
 .bayan-item-radio:checked ~ .bayan-item-text {
-    color: rgb(73, 7, 253);
+    color: rgb(255, 255, 255);
+    transition: color 2s ease-out;
+}
+.bayan-item-radio:checked ~ .bayan-item-text .escape {
+    transform: rotate(45deg);
+    transition: transform 2s ease-out;
+}
+
+.bayan-container:hover  {
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+  
+}
+.bayan-item-radio:hover ~ .bayan-item-text .escape {
+    transform: rotate(45deg);
+    transition: transform 2s ease-out;
 }
 
 .bayan-item-radio:checked img{
@@ -63,29 +76,22 @@ img {
 }
 
 .bayan-item-radio:checked ~ .bayan-item-text .bayan-item-img {
-    height: 100em;
+    height: auto;
     transition: height 4s ease-out;
     transform: scale(1,1);
-    transition: transform 2s ease-out;
+    transition: transform 2s ;
 }
 
-.bayan-item-radio:checked ~ .bayan-item-text:after {
-    border-style: solid;
-    border-width: 0 5px 7px 5px;
-    border-color: transparent transparent #007bff transparent;
-}
 
-.bayan-item-radio:hover ~ .bayan-item-text:after {
-    border-style: solid;
-    border-width: 0 5px 7px 5px;
-    border-color: transparent transparent #007bff transparent;
-}
+
+
+
 
 .bayan-item-radio:hover ~ .bayan-item-text .bayan-item-img {
-    height: 100em;
-    transition: height 4s ease-out;
+    height: auto;
+    transition: height 10s ease-out;
     transform: scale(1,1);
-    transition: transform 2s ease-out;
+    transition: transform 2s ;
 
     
 }
